@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  color: #333;
+  background: #fafafa;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5em;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+header.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #4caf50;
+  color: white;
+}
+
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.menu-principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#apresentacao {
+  text-align: center;
+  padding: 2em 1em;
+}
+#apresentacao img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 1em 0;
+}
+
+#receitas {
+  padding: 2em 1em;
+}
+.card-receita {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1em;
+  margin: 1em 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-receita img {
+  width: 100%;
+  border-radius: 12px;
+}
+.card-receita a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #4caf50;
+  text-decoration: none;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 2em 1em;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+footer label {
+  margin-top: 0.5em;
+}
+footer input, footer button {
+  padding: 0.5em;
+  margin-top: 0.3em;
+}
+footer button {
+  background: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#painel-acessibilidade {
+  position: fixed;
+  top: 10%;
+  right: 1rem;
+  background: white;
+  border: 2px solid #4caf50;
+  padding: 1rem;
+  display: none;
+  border-radius: 12px;
+}
+#painel-acessibilidade[aria-hidden="false"] {
+  display: block;
+}
+
+/* Estilos acessibilidade */
+body.alto-contraste {
+  background: #000;
+  color: #fff;
+}
+body.fonte-grande {
+  font-size: 1.2em;
+}

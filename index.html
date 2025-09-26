@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receitas Verdes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="logo">
+      <h1>🥗 Receitas Verdes</h1>
+    </div>
+    <nav class="menu-principal" aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobremim">Sobre</a></li>
+        <li><a href="#receitas">Receitas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="btn-acessibilidade" aria-label="Abrir opções de acessibilidade">⚙️</button>
+  </header>
+
+  <main id="conteudo-principal">
+    <section id="apresentacao">
+      <h2>Bem-vindo ao universo das receitas saudáveis</h2>
+      <img src="img/salad.jpg" alt="Salada colorida variada em tigela de vidro" />
+      <p>Descubra receitas acessíveis e saudáveis que nutrem corpo e alma.</p>
+    </section>
+
+    <section id="receitas">
+      <h2>Receitas em destaque</h2>
+
+      <article class="card-receita">
+        <img src="img/smoothie.jpg" alt="Copo de smoothie verde com canudo" />
+        <h3>Smoothie Verde</h3>
+        <p>Um suco nutritivo feito com espinafre, maçã e banana.</p>
+        <a href="#">Ver receita completa</a>
+      </article>
+
+      <article class="card-receita">
+        <img src="img/sopa.jpg" alt="Tigela de sopa de legumes colorida" />
+        <h3>Sopa de Legumes</h3>
+        <p>Perfeita para dias frios, rica em vitaminas e sabor.</p>
+        <a href="#">Ver receita completa</a>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <h2>Contato</h2>
+    <form id="form-contato">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </footer>
+
+  <div id="painel-acessibilidade" aria-hidden="true">
+    <button id="btn-fechar">Fechar painel</button>
+    <div>
+      <button id="toggle-contraste">Alto contraste</button>
+      <button id="toggle-fonte">Fonte maior</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
